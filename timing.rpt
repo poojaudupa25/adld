@@ -1,0 +1,41 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fifo
+Version: T-2022.03-SP5
+Date   : Sat Sep 28 14:19:44 2024
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: w_ptr_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: full (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fifo               8000                  saed32rvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  w_ptr_reg[0]/CLK (DFFX1_RVT)             0.00       0.00 r
+  w_ptr_reg[0]/Q (DFFX1_RVT)               0.11       0.11 f
+  U525/Y (NAND2X0_RVT)                     0.07       0.18 r
+  U524/Y (MUX21X1_RVT)                     0.10       0.28 f
+  U522/Y (NAND2X0_RVT)                     0.04       0.32 r
+  U521/Y (XNOR2X1_RVT)                     0.09       0.41 r
+  U512/Y (OR3X1_RVT)                       0.06       0.47 r
+  U339/Y (INVX0_RVT)                       0.02       0.49 f
+  full (out)                               0.00       0.50 f
+  data arrival time                                   0.50
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
